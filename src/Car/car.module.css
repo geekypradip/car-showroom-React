@@ -1,0 +1,145 @@
+.container {
+  /* background: red; */
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 90%;
+}
+.card {
+  flex-basis: 350px;
+  margin: 1%;
+  border: 1px solid rgb(185, 179, 179);
+  padding: 5px;
+}
+.card:hover {
+  box-shadow: 3px 2px 20px rgb(32, 32, 32);
+}
+.imageHolder > img {
+  width: 100%;
+}
+.detais {
+  display: flex;
+  flex-direction: column;
+}
+.orderBtn {
+  background: tomato;
+  text-align: center;
+  padding: 5px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* For Collect user Details popUp */
+.popup_holder,
+.CheckoutHolder {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.705); /* Black w/ opacity */
+}
+.popup,
+.CheckoutBox {
+  width: 40%;
+  margin: auto;
+  background: #fff;
+  /* text-align: center; */
+  padding: 20px;
+}
+.popup > div:nth-child(1),
+.CheckoutBox > div:nth-child(1),
+.carsHolder {
+  display: flex;
+  text-align: center;
+}
+.popup > div:nth-child(1) > span,
+.CheckoutBox > div:nth-child(1) > span {
+  flex-basis: 97%;
+  border: 1px solid Black;
+  background: rgb(51, 50, 50);
+  margin-right: 5px;
+  color: #fff;
+}
+.popup > div:nth-child(1) > div,
+.CheckoutBox > div:nth-child(1) > div {
+  text-align: right;
+  color: rgb(255, 16, 16);
+  /* border: 1px solid Black; */
+  flex-basis: 1%;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.formHolder {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.formHolder > input {
+  padding: 10px;
+  border: none;
+
+  width: 60%;
+  margin: auto;
+  margin-top: 15px;
+  border-bottom: 1px solid tomato;
+}
+.formHolder > button,
+.CheckoutBtn {
+  background: tomato;
+  border: none;
+  padding: 10px;
+  margin: auto;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 15px;
+  width: 90%;
+  cursor: pointer;
+}
+.carImageHolder {
+  width: 50%;
+  border-right: 1px solid green;
+}
+.carImageHolder > img {
+  width: 50%;
+}
+.carsHolder > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+.carsHolder > div:nth-child(2) > * {
+  margin: 5px;
+}
+.CheckoutBtn {
+  background: rgb(7, 102, 7);
+}
+.carsHolder {
+  text-align: left;
+}
+.headings {
+  text-align: center;
+  border-bottom: 1px solid rgb(219, 192, 188);
+}
+/* End usedetais popup */
+.OrderCompleted {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  /* Fallback color */
+  background-color: rgb(215, 231, 239); /* Black w/ opacity */
+}
+.OrderCompleted > img {
+  width: 100%;
+}
